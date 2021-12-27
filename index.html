@@ -3,55 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navs and Tabs</title>
+    <title>Navbar</title>
     <!-- Font Awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- bootstrap4 cdn -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <div class="container bg-primary">
-        <div class="row">
-            <div class="col-lg-5 py-2">
-                <h1 class="text-center text-white">Study With Bootstrap</h1>
-            </div>
-            <div class="col-lg-7">
-                <ul class="nav py-3 justify-content-center">
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Tutorial</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    </header>
-    <div class="container">
-        <main>
-            <div class="row p-5 bg-light">
-                <div class="col-lg-12">
-                    <ul class="nav nav-tabs">
-                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#php">PHP</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#html">HTML</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#css">CSS</a></li>
-                    </ul>
-                    <div class="tab-content">
-                        <div id="php" class="tab-pane active">
-                            <p>1.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloribus dolorum fugit excepturi debitis dolorem est illum labore assumenda nam! Totam, neque consectetur. Atque nemo incidunt tempore aspernatur vel aut tempora ab, nisi molestias neque, laboriosam illum a quisquam dignissimos. Labore at atque quidem culpa. Iure sed hic ipsum officiis.</p>
-                        </div>
-                    
-                        <div id="html" class="tab-pane">
-                            <p>2.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloribus dolorum fugit excepturi debitis dolorem est illum labore assumenda nam! Totam, neque consectetur. Atque nemo incidunt tempore aspernatur vel aut tempora ab, nisi molestias neque, laboriosam illum a quisquam dignissimos. Labore at atque quidem culpa. Iure sed hic ipsum officiis.</p>
-                        </div>
-                    <div id="css" class="tab-pane">
-                        <p>3.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloribus dolorum fugit excepturi debitis dolorem est illum labore assumenda nam! Totam, neque consectetur. Atque nemo incidunt tempore aspernatur vel aut tempora ab, nisi molestias neque, laboriosam illum a quisquam dignissimos. Labore at atque quidem culpa. Iure sed hic ipsum officiis.</p>
-                    </div>
-                </div>   
-            </div>
-        </div>  
-        </main>
-    </div>
+      <div class="container">
+          <header>
+              <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+                  <a href="" class="navbar-brand">
+                      <img src="img/logo1.png" alt="logo" style="width:100px">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
 
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Tutorials</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                    </ul>
+
+                  </div>
+              </nav>
+          </header>
+      </div>
     <!-- bootstrap js, jquery, popper -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
