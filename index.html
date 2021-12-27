@@ -3,43 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blockquote and Abbreviations</title>
+    <title>Button and Lists</title>
     <!-- Font Awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- bootstrap4 cdn -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container">
+    <div class="container p-5">
         <main>
-            <!-- Customer Services -->
-            <div class="customer_services bg-light text-center p-5">
-                <div class="title">
-                    <h3 class="font-weight-bolder">Customer Review</h3>
+            <!-- Button -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title mb-3">
+                        <h3>Buttons:</h3>
+                    </div>
+                    <button class="btn btn-primary">Click Here</button>
+                    <button class="btn btn-danger disabled">Download Here</button> 
+                    <button class="btn btn-secondary">Click Here</button>
+                    <button class="btn btn-warning">Download Here</button>
+                    <button class="btn btn-info">Click Here</button>
+                    <button class="btn btn-success" type="button">Download Here</button>          
                 </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <i class="p-2 fa-3x fas fa-user"></i>
-                        <blockquote class="blockquoute">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit veritatis officia adipisci voluptas, mollitia suscipit ipsam.In this website we can learn <abbr title="bootstrap4">bs4</abbr>
-                            <footer class="blockquote-footer pt-3">Rasel Ahmed <cite>youtuber</cite></footer>
-                        </blockquote>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 pt-3">
+                    <div class="title mb-3">
+                        <h3>Outline buttons:</h3>
                     </div>
-                    <div class="col-lg-4">
-                        <i class="p-2 fa-3x fas fa-user"></i>
-                        <blockquote class="blockquoute">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit veritatis officia adipisci voluptas, mollitia suscipit ipsam.In this website we can learn <abbr title="bootstrap4">bs4</abbr>
-                            <footer class="blockquote-footer pt-3">Rasel Ahmed <cite>youtuber</cite></footer>
-                        </blockquote>
+                    <button class="btn btn-outline-primary">Click Here</button>
+                    <button class="btn btn-outline-danger">Download Here</button> 
+                    <button class="btn btn-outline-secondary">Click Here</button>
+                    <button class="btn btn-outline-warning">Download Here</button>
+                    <button class="btn btn-outline-info">Click Here</button>
+                    <button class="btn btn-outline-success" type="button">Download Here</button>          
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 pt-3">
+                    <div class="title mb-3">
+                        <h3>Sizes:</h3>
                     </div>
-                    <div class="col-lg-4">
-                        <i class="p-2 fa-3x fas fa-user"></i>
-                        <blockquote class="blockquoute">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit veritatis officia adipisci voluptas, mollitia suscipit ipsam.In this website we can learn <abbr title="bootstrap4">bs4</abbr>
-                            <footer class="blockquote-footer pt-3">Rasel Ahmed <cite>youtuber</cite></footer>
-                        </blockquote>
+                    <button class="btn btn-primary btn-lg active">Large</button>
+                    <button class="btn btn-danger btn-lg">Large</button> 
+                    <button class="btn btn-secondary btn-lg">Large</button>
+                    <button class="btn btn-warning btn-sm">Small</button>
+                    <button class="btn btn-info btn-sm">Small</button>
+                    <button class="btn btn-success btn-sm">Small</button>          
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 pt-3">
+                    <div class="title mb-3">
+                        <h3>Block Level:</h3>
                     </div>
-                </div>  
+                    <button class="btn btn-info btn-block">Click Here</button>
+                    <button class="btn btn-success btn-block">Click Here</button>          
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 pt-3">
+                    <div class="title mb-3">
+                        <h3>Button groups:</h3>
+                    </div>
+                    <div class="btn-group">
+                    <button class="btn btn-primary">Click Here</button>
+                    <button class="btn btn-danger">Download Here</button> 
+                    <button class="btn btn-secondary">Click Here</button>
+                    <button class="btn btn-warning">Download Here</button>
+                    <button class="btn btn-info">Click Here</button>
+                    <button class="btn btn-success" type="button">Download Here</button>  
+                    </div>
+                            
+                </div>
+            </div>
+            <!-- Lists -->
+            <div class="row">
+                <div class="col-lg-12 pt-3">
+                    <div class="title mb-3">
+                        <h3>List groups:</h3>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">Rahim</li>
+                        <li class="list-group-item">Karim</li>
+                        <li class="list-group-item">Ratul</li>
+                    </ul>
+                </div>
             </div>
         </main>
     </div>
