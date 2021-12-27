@@ -3,35 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Collapse and Pagination</title>
+    <title>Navs and Tabs</title>
     <!-- Font Awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- bootstrap4 cdn -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container p-5">
+    <header>
+        <div class="container bg-primary">
+        <div class="row">
+            <div class="col-lg-5 py-2">
+                <h1 class="text-center text-white">Study With Bootstrap</h1>
+            </div>
+            <div class="col-lg-7">
+                <ul class="nav py-3 justify-content-center">
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Tutorial</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </header>
+    <div class="container">
         <main>
-            <!-- Collapse -->
-            <div class="row text-center">
+            <div class="row p-5 bg-light">
                 <div class="col-lg-12">
-                    <a href="#demo" data-toggle="collapse" class="btn btn-primary mb-5 btn-lg">Read More</a>
-                    <div class="collapse" id="demo">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae at adipisci ducimus dicta reiciendis provident quo placeat dolores odit! Assumenda voluptas reiciendis quaerat esse quisquam quibusdam delectus omnis dignissimos, commodi dolore alias magni amet sunt? Odio dolorem debitis aspernatur optio esse nostrum recusandae! Quaerat necessitatibus assumenda natus accusamus? Fugiat rerum voluptas optio? Praesentium, tempora sapiente! Vel totam cumque non explicabo odit quia. Quaerat atque voluptatum eveniet sit quisquam illum expedita beatae ut nam voluptate adipisci odio similique assumenda repudiandae voluptatibus quidem, praesentium quae deserunt commodi ducimus pariatur quibusdam! Architecto mollitia, voluptas voluptatem repudiandae soluta fuga asperiores labore odit tenetur reprehenderit!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 p-5 bg-dark">
-                    <ul class="pagination justify-content-center pagination-lg">
-                        <li class="page-item"><a class="page-link" href="#">pre</a></li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">next</a></li>
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#php">PHP</a></li>
+                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#html">HTML</a></li>
+                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#css">CSS</a></li>
                     </ul>
-                </div>
+                    <div class="tab-content">
+                        <div id="php" class="tab-pane active">
+                            <p>1.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloribus dolorum fugit excepturi debitis dolorem est illum labore assumenda nam! Totam, neque consectetur. Atque nemo incidunt tempore aspernatur vel aut tempora ab, nisi molestias neque, laboriosam illum a quisquam dignissimos. Labore at atque quidem culpa. Iure sed hic ipsum officiis.</p>
+                        </div>
+                    
+                        <div id="html" class="tab-pane">
+                            <p>2.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloribus dolorum fugit excepturi debitis dolorem est illum labore assumenda nam! Totam, neque consectetur. Atque nemo incidunt tempore aspernatur vel aut tempora ab, nisi molestias neque, laboriosam illum a quisquam dignissimos. Labore at atque quidem culpa. Iure sed hic ipsum officiis.</p>
+                        </div>
+                    <div id="css" class="tab-pane">
+                        <p>3.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloribus dolorum fugit excepturi debitis dolorem est illum labore assumenda nam! Totam, neque consectetur. Atque nemo incidunt tempore aspernatur vel aut tempora ab, nisi molestias neque, laboriosam illum a quisquam dignissimos. Labore at atque quidem culpa. Iure sed hic ipsum officiis.</p>
+                    </div>
+                </div>   
             </div>
+        </div>  
         </main>
     </div>
 
