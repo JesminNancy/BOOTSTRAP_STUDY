@@ -3,35 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Object</title>
+    <title>Carousel</title>
     <!-- Font Awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- bootstrap4 cdn -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        #feedback{
+            background-color: #0d0442;
+            padding: 7% 10%;
+        }
+        .hr-style{
+            border: 5px dotted white;
+            border-bottom: none;
+            width: 50px;
+        }
+        .carousel-item{
+            padding: 5% 15%;
+            text-align: center;
+            font-style: italic;
+        }
+        .feedback-img{
+            width: 150px;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-      <div class="container">
-          <div class="media border p-3">
-              <img style="width:200px;height: 175px;" class="rounded-circle mr-3" src="img/environment-earth-day-hands-trees-g47.jpg" alt="">
-              <div class="media-body">
-                  <h3>I Love Programming</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto porro nemo ab esse magni commodi, laborum consectetur inventore rem. Soluta.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio quo aliquam qui repellendus ipsam vitae quas cum non in placeat! Quae labore delectus similique provident numquam maxime accusantium, necessitatibus excepturi exercitationem consequatur at adipisci perferendis, neque, debitis porro facilis ipsa dolores illo! Unde nemo facere velit minus repellat sint aliquam, nostrum corrupti impedit! Ab </p>
-              </div>
-          </div>
-          <div class="media border p-3 mt-3">
-            <div class="media-body">
-                <h3>I Love Programming</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto porro nemo ab esse magni commodi, laborum consectetur inventore rem. Soluta.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio quo aliquam qui repellendus ipsam vitae quas cum non in placeat! Quae labore delectus similique provident numquam maxime accusantium, necessitatibus excepturi exercitationem consequatur at adipisci perferendis, neque, debitis porro facilis ipsa dolores illo! Unde nemo facere velit minus repellat sint aliquam, nostrum corrupti impedit! Ab  </p>
-            </div>
-            <img style="width:200px;height: 175px;" class="rounded-circle mr-3" src="img/environment-earth-day-hands-trees-g47.jpg" alt="">
-        </div>
-        <div class="media border p-3 mt-3">
-            <img style="width:200px;height: 175px;" class="rounded-circle mr-3 align-self-center" src="img/environment-earth-day-hands-trees-g47.jpg" alt="">
-            <div class="media-body">
-                <h3>I Love Programming</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio quo aliquam qui repellendus ipsam vitae quas cum non in placeat! Quae labore delectus similique provident numquam maxime accusantium, necessitatibus excepturi exercitationem consequatur at adipisci perferendis, neque, debitis porro facilis ipsa dolores illo! Unde nemo facere velit minus repellat sint aliquam, nostrum corrupti impedit! Ab eius, reprehenderit molestias dolorem sint voluptates asperiores dolor quod, iusto necessitatibus aliquid? Laborum nihil totam perspiciatis consequatur dolorum assumenda perferendis. Ipsam, totam molestiae veniam dolorem soluta perferendis ullam aut perspiciatis quaerat culpa aperiam repellendus? Asperiores placeat obcaecati odio quidem quibusdam labore tenetur pariatur cupiditate tempora dolore?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae nemo esse eaque odio. Necessitatibus eveniet, ab alias, natus magni amet accusantium illum illo ipsum molestiae ratione tempora itaque dolorum. Repudiandae quaerat aliquam illo repellendus esse ex voluptatum qui, temporibus atque voluptate soluta, nemo maxime adipisci recusandae ipsam provident maiores eaque, ad perferendis exercitationem sunt autem tenetur iusto suscipit. Ipsa incidunt impedit corrupti, iusto molestias autem? Vero labore sint atque voluptatum quibusdam fugit adipisci consequuntur dolorem amet ratione, sed quae? Animi saepe sint molestiae quas odio nisi. Eveniet, autem et voluptate omnis ullam eos, ex cumque amet debitis eligendi modi nostrum.</p>
-            </div>
-        </div>
+      <div class="container text-white text-center">
+            <section id="feedback">
+                <div class="section-title">
+                    <h3>Feedback</h3>
+                    <hr class="hr-style">
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                    <p>Item1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, porro iusto quibusdam tempore sapiente corrupti.</p>
+                                    <img class="rounded-circle feedback-img mb-3" src="img/environment-earth-day-hands-trees-g47.jpg" alt="item1">
+                                    <h6>Environment</h6>
+                              </div>
+                              <div class="carousel-item">
+                                <p>Item2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, porro iusto quibusdam tempore sapiente corrupti.</p>
+                                <img class="rounded-circle feedback-img mb-3" src="img/download.jfif" alt="item1">
+                                <h6>Environment</h6>
+                              </div>
+                              <div class="carousel-item">
+                                <p>Item3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, porro iusto quibusdam tempore sapiente corrupti.</p>
+                                <img class="rounded-circle feedback-img mb-3" src="img/349086549020201.webp" alt="item1">
+                                <h6>Environment</h6>
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                    </div>
+                </div>
+            </section>          
      </div>
     <!-- bootstrap js, jquery, popper -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
